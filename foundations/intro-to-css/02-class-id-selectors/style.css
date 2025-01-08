@@ -1,4 +1,10 @@
 .odd{
     background-color: rgb(255, 146, 175);
-    font-family: "Verdana", "DejaVu Sans", sans-serif
+    font-family: "Verdana", "DejaVu Sans", sans-serif;
 }
+
+#second{
+    color: blue;
+    font-size: 36px;
+}
+
