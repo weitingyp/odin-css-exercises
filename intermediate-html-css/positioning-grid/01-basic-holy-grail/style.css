@@ -9,6 +9,8 @@ html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+  display: grid;
+  grid-template: 50px 50px 50px 50px 50px 50px 50px 50px / 100px 100px 100px 100px;
 }
 
 .container div {
@@ -22,21 +24,32 @@ html {
 
 .header {
   background-color: #006157;
+  grid-area: 1 / 1 / 2 / 5;
 }
 
 .sidebar {
   background-color: #005B94;
+  grid-row: 2 / 8;
+  grid-column: 1 / 2;
 }
 
 .nav {
   background-color: #642cde;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 5;
 }
 
 .article {
   background-color: #7E1DC3;
+  grid-row: 3 / 7;
+  grid-column: 2 / 5;
 }
 
 .footer {
+  grid-row: 7;
+  grid-column: 1 / 5;
   background-color: #393f4d;
 }
 
